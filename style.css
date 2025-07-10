@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Wallop TRIAL";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/tayoandhobbes/Stories/WallopTRIAL-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Wallop TRIAL";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/tayoandhobbes/Stories/WallopTRIAL-SemiBold.woff")
+    format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+  background: #c779a0;
+  color: #011323;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.header-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 40px 10px;
+  max-width: 82vw;
+  align-items: flex-start;
+  align-self: center;
+  z-index: 3;
+}
+.header-bar {
+  position: relative;
+  z-index: 2;
+}
+.parallax-inner {
+  z-index: 1;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 20px 40px;
+  width: -webkit-fill-available;
+  z-index: 5;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+.menu-icon {
+  height: 16px;
+  width: auto;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  text-decoration: none;;
+}
+
+.tag {
+    border-radius: 25px;
+    border: 1px solid #011323;
+    display: flex;
+    padding: 9px 12px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-decoration: none;
+    color: #011323;
+    transition: all ease-out 0.34s;
+}
+.tag:hover {
+    background: #011323;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.location {
+  font-family: "Source Sans 3";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  align-self: center;
+  margin-left: 8px;
+}
+
+.headline {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0.5rem 0 2rem;
+  font-family: "Wallop TRIAL", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #0d0d1f;
+}
+
+.byline {
+  display: flex;
+  flex-direction: row;
+  width: -webkit-fill-available;
+  justify-content: flex-end;
+  padding: 0 40px 16px;
+  z-index: 5;
+}
+.byline .by {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.byline span {
+  font-family: "Source Serif 4", serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 100%;
+}
+.byline .read-time {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.dot {
+  margin: 0 0.5rem;
+}
+
+.parallax-mask {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.parallax-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url("https://s.hdnux.com/photos/35/34/07/7717325/4/1920x0.jpg");
+  background-size: cover;
+  background-position: top;
+  will-change: transform;
+  z-index: 0;
+}
+.story-content {
+  height: 800px;
+  background: #f5f2d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Wallop TRIAL", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/* Community Good */
+.impact-container {
+  position: relative;
+  height: 100vh;
+}
+
+.community-impact {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 4px;
+  right: 4px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 4px;
+  margin-top: -16.75%;
+}
+
+.impact-box {
+  background: #c779a0;
+  color: #0d0d1f;
+  padding: 28px;
+  border-radius: 16px;
+  font-family: "Wallop TRIAL", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 314px;
+}
+
+.impact-title {
+  font-family: "Wallop TRIAL";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0;
+}
+
+.impact-main {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 32px 0px;
+}
+
+.impact-main .dollar {
+  font-family: "Source Sans 3";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 82%;
+}
+
+.impact-main .unit {
+  font-family: "Source Sans 3";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding-left: 16px;
+  align-self: center;
+}
+.impact-main .unit em {
+  font-family: "Source Serif 4";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+}
+.impact-sub {
+  font-family: "Source Sans 3";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.impact-sub strong {
+  font-family: "Wallop TRIAL";
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 37px */
+  letter-spacing: -0.74px;
+}
+.impact-sub small {
+  font-family: "Source Serif 4";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  text-transform: capitalize;
+}
+.impact-sub div {
+  text-align: left;
+}
+.measure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hero Blurs */
+.hero-blurs {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blur {
+  position: absolute;
+  width: 462px;
+  height: 462px;
+  border-radius: 462px;
+  background: #ac5b88;
+  filter: blur(100px);
+  animation: float 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.blur-left {
+  bottom: -100px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.blur-right {
+  top: -80px;
+  right: -120px;
+  animation-delay: 2s;
+}
+.amount {
+  font-family: "Wallop TRIAL";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72%;
+  letter-spacing: -3px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(600px, -20px) scale(1.05);
+  }
+  100% {
+    transform: translate(-400px, 20px) scale(1);
+  }
+}
+
+.parallax-mask,
+.parallax-inner {
+  transform: translate3d(0, 0, 0) scale(1);
+  will-change: transform;
+  transition: transform 0s;
+}
+
+.vertical-line {
+  width: 1px;
+  height: -webkit-fill-available;
+  background-color: #011323;
+}
+
+.impact-container {
+  height: calc(100vh + 1px);
+}
