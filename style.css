@@ -174,14 +174,28 @@ body {
   z-index: 0;
 }
 .story-content {
-  height: 800px;
-  background: #f5f2d8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Wallop TRIAL", sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
+    height: auto;
+    background: #f5f2d8;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Wallop TRIAL", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 6rem;
+    top: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    font-family: 'Source Serif 4';
+}
+
+.story-content p {
+  max-width: 50vw;;
 }
 
 /* Community Good */
